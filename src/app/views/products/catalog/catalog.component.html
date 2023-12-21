@@ -1,0 +1,28 @@
+<section class="products">
+    <div class="" *ngIf="loader">LOADING....</div>
+    <div class="container">
+        <h1 class="text-center">Наши чайные коллекции</h1>
+        <div class="text-center" *ngIf="loader">LOADING....</div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-4">
+
+            <div class="" *ngFor="let product of products">
+                
+            <div class="col wow animate__headShake ">
+                <div class="card shadow-sm product-card">
+                    <a class="product-img" >
+                    <img src={{product.image}} alt="01">
+                    </a>
+                   
+                        <div class="card-title">{{product.title}}</div>
+                        <div class="card-text mb-4 card-descript">{{product.description}}</div>
+                        <button type="button" class="btn text-white py-2 hvr-float-shadow"  [routerLink]="['/products',product.id]">Подробнее</button>
+                   
+                </div>
+            </div>
+            </div>
+
+
+          
+        </div>
+    </div>
+</section>

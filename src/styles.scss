@@ -1,1 +1,252 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+app-root{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+app-header{
+flex: 1 0 auto
+}
+main{
+flex:  1 0 auto;
+}
+app-footer{
+    flex: 0 0 auto;
+}
+footer{
+
+}
+.header-link.active{
+    color: blueviolet !important;
+}
+header{
+    background-color: #F8F9FA;
+    padding: 12px 0;
+}
+.menu-header {
+    list-style-type: none;
+}
+.menu-header a{
+    text-decoration: none;
+}
+.burger{
+   fill: gray;
+}
+
+.logo{
+    color: black;
+    font-size: 20px;
+}
+a.active{
+    color: #000000;
+}
+.nav-link{
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-and-search{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* --------main--------------------------------------------------------------------------------------------------------- */
+.main{
+    padding: 72px 0 36px 0;
+}
+.popap-block{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000057;
+    z-index: 1;
+}
+.popap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #F8F9FA;
+    margin-top: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+border: 1px solid black;
+border-radius: 20px;
+margin: 0 auto;
+}
+.popap-text{
+margin-bottom: 15px;
+}
+.popap-button{
+    padding: 6px;
+    color: #F8F9FA;
+    background-color: green;
+}
+ul.slick-dots{
+    display: none !important;
+}
+
+img{
+  width: 100%;
+  display: block;  
+}
+.img_card{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.activ-arrow{
+    transform: rotate(180deg);
+}
+.btn-product{
+    margin: 0 auto;
+}
+
+.slick-prev{
+    left: 41px;
+    z-index: 100;
+}
+.slick-next{
+    right: 64px;
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 40px;
+    color: #000000;
+}
+.single-item button{
+    display: none !important;
+}
+
+/* --------products--------------------------------------------------------------------------------------------------------- */
+.products{
+padding: 36px 0;
+}
+
+.products h1{
+    margin-bottom: 51px;
+    font-weight: 700;
+font-size: 32px;
+}
+.card-body{
+    padding: 20px;
+}
+.card-title{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.col button{
+    background-color: #076BFF;
+    padding: 0 42px;
+    width: 172px;
+}
+.own-product{
+    margin: 0 auto;
+}
+
+/* --------products--------------------------------------------------------------------------------------------------------- */
+.question{
+    padding: 36px 0 32px 0;  
+    position: relative;
+}
+.product-card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.card-descript{
+    flex: 1 1 auto;
+}
+.question .container{
+    max-width: 856px;
+}
+
+h2{
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h3 > .ui-accordion-header-icon{
+    display: none;
+}
+.question h3{
+    background: linear-gradient(360deg, #076BFF 0%, #007BFF 100%);
+    border-radius: 10px;
+}
+h3{
+    position: relative;
+}
+.arrows{
+    position: absolute;
+    right: 0;
+    top: 26px;
+   right: 24px;
+   transition: all .5s ease;
+  }
+  .arrows.active::after{
+    transform:rotate(180deg);
+  }
+
+  .questions{
+ 
+  }
+//   .question-description{
+//     display: none;
+//   }
+
+/* --------order--------------------------------------------------------------------------------------------------------- */
+
+  .order{
+    padding: 24px 0 48px 0; 
+    max-width: 660px;
+  }
+label{
+color: #000000;
+}
+.form-label{
+    margin-bottom: 10px;
+}
+.order form button{
+    padding: 6px 37px;
+}
+
+/* --------footer--------------------------------------------------------------------------------------------------------- */
+
+footer{
+    background-color: #F8F9FA;
+    padding: 19px 0;
+}
+
+
+.order-open p{
+    padding: 170px 0;
+    font-weight: 700;
+    font-size: 32px;
+    
+}
+
+
+.error{
+    color: red;
+}
+
+.search{
+    width: 500px;
+    margin: 0 auto;
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
