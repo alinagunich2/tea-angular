@@ -4,13 +4,27 @@ import { ProductComponent } from './product/product.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
 const routes: Routes = [
+  // {
+  //   path:'',
+  //   component:ProductComponent
+  // },
+  
+  // {
+  //   path:':id',
+  //   component:ProductComponent
+  // },
+  // {
+  //   path:'catalog',
+  //   component:CatalogComponent
+  // },
+
   {
-    path:'products',
+    path:'',
     component:ProductComponent
   },
   
   {
-    path:'products/:id',
+    path:':id',
     component:ProductComponent
   },
   {
