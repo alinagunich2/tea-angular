@@ -4,33 +4,20 @@ import { ProductComponent } from './product/product.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
 const routes: Routes = [
-  // {
-  //   path:'',
-  //   component:ProductComponent
-  // },
-  
-  // {
-  //   path:':id',
-  //   component:ProductComponent
-  // },
-  // {
-  //   path:'catalog',
-  //   component:CatalogComponent
-  // },
 
   {
     path:'',
-    component:ProductComponent
-  },
-  
-  {
-    path:':id',
     component:ProductComponent
   },
   {
     path:'catalog',
     component:CatalogComponent
   },
+  {
+    path:':id',
+    component:ProductComponent
+  },
+ 
 ];
 
 @NgModule({
